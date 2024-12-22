@@ -15,6 +15,7 @@ const eslintConfig = [
     "next/typescript",
     "standard",
     "plugin:tailwindcss/recommended",
+    "prettier-plugin-tailwindcss",
     "prettier"
   ),
   ...compat.plugins("import"),
