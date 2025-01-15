@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-
-import localFont from "next/font/local";
 import ThemeProvider from "@/context/theme";
-import Navbar from "@/components/ui/navigation/navbar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -39,7 +36,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
           {children}
         </ThemeProvider>
       </body>
